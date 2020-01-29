@@ -4,7 +4,7 @@ plugins {
 }
 
 group 'org.holovin'
-version '1.0-SNAPSHOT'
+version '0.21'
 
 sourceCompatibility = 1.8
 
@@ -22,6 +22,6 @@ intellij {
 }
 patchPluginXml {
     changeNotes """
-      Allow sort bookmarks by description!
+      Allow sort bookmarks by description.
       """
 }

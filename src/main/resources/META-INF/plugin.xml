@@ -1,6 +1,7 @@
 <idea-plugin>
     <id>org.holovin.DDDSortBookmarks</id>
     <name>DDD Sort Bookmarks</name>
+    <version>0.21</version>
     <vendor email="alex@holov.in" url="https://github.com/Holovin/idea_ddd_bookmarks_sorter">Alex Holovin</vendor>
 
     <description><![CDATA[

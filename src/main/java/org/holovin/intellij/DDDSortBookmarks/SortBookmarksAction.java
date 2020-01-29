@@ -11,6 +11,7 @@ import org.jetbrains.annotations.NotNull;
 
 import java.text.Collator;
 import java.util.List;
+import java.util.Locale;
 
 public class SortBookmarksAction extends AnAction {
 
@@ -28,7 +29,7 @@ public class SortBookmarksAction extends AnAction {
         }
 
         // TODO: pass locale en-en?
-        Collator collator = Collator.getInstance();
+        Collator collator = Collator.getInstance(new Locale("ru", "RU"));
 
         // Reverse order because add bookmarks to list from end
         validBookmarks.sort((a, b) -> collator.compare( b.getDescription(), a.getDescription()) );
@@ -47,7 +48,7 @@ public class SortBookmarksAction extends AnAction {
             );
         }
 
-        // Messages.showInfoMessage("ok", "Sorted");
+        Messages.showInfoMessage("ok", "Sorted");
     }
 
     @Override
